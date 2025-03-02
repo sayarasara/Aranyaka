@@ -17,20 +17,98 @@
 <div><label class="peer ...">
     <input type="checkbox" checked />
   </label></div><br>
+  
+
 <main>
           <div class="dropdown dropdown-end">
             <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
               <div class="w-10 rounded-full">
+                <button>
                 <img
                   alt="Tailwind CSS Navbar component"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnfyKXYZm47C6b8Y0R9-G89fKshX5FYhfyCg&s">
+           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnfyKXYZm47C6b8Y0R9-G89fKshX5FYhfyCg&s">
+          </button>
               </div>
             </div>
-            
+            <script>
+              document.body.style.height = '800px';
+document.body.addEventListener('click', function(e){
+  let colors = ['green','blue','red','yellow','purple','pink'];
+  let randomColor =
+  colors[Math.floor(Math.random()*colors.length)];
+ let self = this
+ // var self = this,
+       // old_bg = this.style.background;
+       let old_bg = 
+   this.style.background;
+   this.style.background = randomColor;
+
+   // this.style.background = this.style.background=='green'? 'blue':'green';
+  //  setTimeout(function(){
+   //     self.style.background = old_bg;
+   // }, 1000);
+})
+
+            </script>
             
           </div>
         </div>
       </div>
+<br>
+
+      <section class="grid grid-cols-3">
+
+        <div class="card w-50 h-25 bg-blue-200 card-xs shadow-sm">
+          <label class="peer ...">
+            <input type="checkbox" checked />
+          </label>
+          <div class="card-body">
+            <p class="font-bold">Task Assigned</p>
+            <div class="justify-end card-actions">
+              <p class="text-xl font-bold">05</p>
+            </div>
+          </div>
+        </div>
+    
+
+    <div class="card lg:card-side bg-purple-300 card w-90 rounded-box shadow-sm">
+      <figure class="w-50">
+       
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW1yjeUDrJybRcVCK2_iSJV4yR5cOlQ3CDYA&s"
+          alt="" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">Discover Something New Today</h2>
+        
+        <div class="card-actions justify-end">
+        <script>
+          function goToPage(e) {
+            let url="http://www.exampledomain.com/"+e.target.value;  
+            console.log(url);
+            window.location = url;
+          }
+</script>  
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card w-50 h-25 bg-blue-200 card-xs shadow-sm place-items-left">
+    <div class="card-body">
+      <div class="w-10">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxzSDF5c6inFiceZeUYNgvWJ7qwzJpTXTLsQ&s">
+      </div>
+      <p class="font-bold">Web,</p>
+      <div class="justify-end card-actions">
+        <p class="text-xl font-bold">05</p>
+      </div>
+    </div>
+  </div>
+      </section>
+      
+    
+<br>
     </main>
       <div class="flex w-full flex-col lg:flex-row">
         <div class="card bg-base-100 rounded-box grid h-32 grow place-items-center">
@@ -111,10 +189,11 @@
         </div>
         <div class="divider lg:divider-horizontal"></div>
 
-        <div class="card bg-base-300 rounded-box grid h-32 grow place-items-center">
-
-
-
+        <div class="card bg-base-100 rounded-box grid h-90 grow place-items-center">
+          <div>
+<p class="font-bold">Activity Log</p>
+<button class="bg-blue-300">Clear History</button>
+</div>
         </div>
       </div>
 
